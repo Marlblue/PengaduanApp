@@ -44,7 +44,7 @@ export default function RegisterScreen() {
     if (!validatePhone(form.phone)) {
       Alert.alert(
         "Error",
-        "Format nomor telepon tidak valid. Contoh: 081234567890"
+        "Format nomor telepon tidak valid. Contoh: 081234567890",
       );
       return;
     }
@@ -89,7 +89,7 @@ export default function RegisterScreen() {
         Alert.alert(
           "Sukses",
           "Registrasi berhasil! Silakan login dengan akun Anda.",
-          [{ text: "OK", onPress: () => router.replace("/(auth)/login") }]
+          [{ text: "OK", onPress: () => router.replace("/(auth)/login") }],
         );
       }
     } catch (error) {

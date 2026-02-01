@@ -135,7 +135,7 @@ export default function CreatePengaduanScreen() {
             text: "OK",
             onPress: () => router.back(),
           },
-        ]
+        ],
       );
     } catch (error) {
       console.error("Error creating pengaduan:", error);
